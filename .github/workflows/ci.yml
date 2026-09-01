@@ -11,7 +11,7 @@ jobs:
   swift:
     runs-on: macos-14
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Show Swift version
         run: swift --version
       - name: Test
@@ -25,8 +25,8 @@ jobs:
       run:
         working-directory: android/dji-viewer
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-java@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-java@v6
         with:
           distribution: temurin
           java-version: "17"
